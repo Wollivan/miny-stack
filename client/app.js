@@ -1,7 +1,9 @@
 // call my api
 async function getMessage() {
   // call our API with fetch
-  const response = await fetch("http://localhost:8080/message");
+  const response = await fetch(
+    "https://miny-stack-server.onrender.com/message"
+  );
 
   // turn the response into json
   const json = await response.json();
